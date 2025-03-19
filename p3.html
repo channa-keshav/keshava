@@ -1,0 +1,38 @@
+
+<!doctype>
+<html>
+<head>
+	<title>css keyframes animation demo</title>
+	<style>
+		@keyframes colorchange{
+			0%{
+				transform:translateX(0)
+				background-color:black;
+			}
+			50%{
+				background-color:aqua;
+			}
+			70%{
+				background-color:orange;
+			}
+
+			100%{
+				transform:translateX(200px)
+			}
+		
+		}
+	.box{
+	  width:400px;
+	  height:200px;
+	  background-color:green;
+	  animation-name:colorchange;
+	  animation-duration:1.1ms;
+	  animation-timing-function:linear;
+	  animation-iteration-count:50;
+	}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>		
